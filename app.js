@@ -29,7 +29,52 @@ console.log(AreaTriangulo(15, 3))
 
 //Extender un string
 function extenderString(texto) {
-    let texto = ''
+    return 'Frontend ' + texto
+}
+console.log(extenderString('OWO'))
+
+//Para que un numero si o si se comporte como numero añades + antes a la variable por ejemplo funcion('1') (1 esta como texto) entonces dentro de
+// la funcion cambiamos el argumento a (+argumento) y lo trata como nuemro y no como texto
+
+//Ejercicio = Mayor a 100
+// Dado dos número, devolver "TRUE" si la suma de ambos es mayor a 100, si no falso
+
+function MayorA100(num1, num2) {
+    return num1 + num2 > 100 
 }
 
-console.log('OWO')t
+console.log(MayorA100(50, 80))
+console.log(MayorA100(10, 15))
+console.log(MayorA100(50, 50))
+
+// OBtener lo opuesto de un valor booleano (Si pones True que returne false)
+function booleanOpuesto(bool) {
+    return !bool
+}
+
+console.log(booleanOpuesto(false))
+console.log(booleanOpuesto(true))
+
+// Retornar TRUE si NO ES 0
+
+function EsCero(num1) {
+    return num1 !== 0
+}
+
+console.log(EsCero(5))
+
+// Funcion que de el resto de la division de dos numeros
+
+function Remainder (num1, num2) {
+    return num1 % num2
+}
+
+console.log(Remainder(7, 8))
+
+// return true si es impar, false sies par
+
+function EsImpar(num1) {
+    return num1 % 2 !== 0
+}
+
+console.log(EsImpar(3))
