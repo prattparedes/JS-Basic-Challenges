@@ -78,3 +78,38 @@ function EsImpar(num1) {
 }
 
 console.log(EsImpar(3))
+
+// Si es par return 1, si es impar return -1
+
+function booleanInteger(num1) {
+    if (num1 % 2 === 0) {
+        return 1
+    }
+    return -1
+}
+
+console.log(booleanInteger(6))
+
+// OTRA FORMA DE ESCRIBIR EL DE ARRIBA
+
+function IntegerBooleano(num1) {
+    return num1 % 2 === 0 ? 1 : -1;
+}
+
+console.log(IntegerBooleano(3))
+
+// Checkear si un usuario esta logeado y suscrito
+
+function isLoggedInAndSubscribed(loggedIn, suscribed) {
+    return loggedIn === 'LOGGED_IN' && suscribed === 'SUBSCRIBED'
+}
+
+console.log(isLoggedInAndSubscribed('LOGGED_IN', 'SUBSCRIBED'))
+
+// Checkear siestá logeado O suscrito
+
+function isLoggedInAndSubscribed2(loggedIn, suscribed) {
+    return loggedIn === 'LOGGED_IN' || suscribed === 'SUBSCRIBED'
+}
+
+console.log(isLoggedInAndSubscribed2('LOGGED_IN', 'SUBSCRIBED'))
